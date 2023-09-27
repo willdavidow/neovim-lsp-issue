@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["jest", "node"],
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@web/*": ["apps/web/*"],
+      "@ui-lib/ui": ["libs/ui/src/index.ts"],
+      "@ui-lib/ui/styles/*": ["libs/ui/src/lib/styles/*"]
+    }
+  },
+  "include": [
+    "jest.config.ts",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.tsx",
+    "src/**/*.test.js",
+    "src/**/*.spec.js",
+    "src/**/*.test.jsx",
+    "src/**/*.spec.jsx",
+    "src/**/*.d.ts"
+  ]
+}

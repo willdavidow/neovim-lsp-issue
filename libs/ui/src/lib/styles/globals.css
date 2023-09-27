@@ -1,0 +1,51 @@
+@tailwind base;
+@layer base {
+  h1 {
+    @apply text-32;
+  }
+  h2 {
+    @apply text-20;
+  }
+  h3 {
+    @apply text-18;
+  }
+  h4 {
+    @apply text-16;
+  }
+  h5 {
+    @apply text-14;
+  }
+  h6 {
+    @apply text-12;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+  body {
+    @apply bg-mn-grey;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 48;
+  line-height: normal;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#__next {
+  isolation: isolate;
+}
+
+/* Custom Styles */
+html,
+body,
+#__next,
+#__next > div {
+  height: 100%;
+}
